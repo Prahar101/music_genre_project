@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+keras
+librosa
+numpy
+pickle5
+streamlit
+httpx
