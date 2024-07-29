@@ -3,7 +3,7 @@ import httpx
 
 def call_api(file):
     # Replace with your API endpoint and any necessary headers
-    url = "http://localhost:8080/predict"
+    url = "https://rythmradar.azurewebsites.net/predict"
     headers = {"accept": "application/json"}
 
     files = {"file": (file.name,file.read(),"application/json")}
