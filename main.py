@@ -32,5 +32,5 @@ async def predict(file: UploadFile):
     ans = le.inverse_transform(y_pred)
     return {'prediction': ans[0]}
 
-if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=8080, reload=True)
+#if __name__ == "__main__":
+#    uvicorn.run("main:app", host="0.0.0.0", port=8080, reload=True)
