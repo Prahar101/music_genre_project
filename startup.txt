@@ -1,2 +1,3 @@
+echo "hello world"
 python main.py
 streamlit run front.py
