@@ -8,7 +8,7 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: '5dfb74bf-8d76-48c8-95f4-e5d9ed366ddd'
+  azureServiceConnectionId: 'feb90a6d-bf54-4064-9dca-84a2bc6d227f'
 
   # Web app name
   webAppName: 'RythmRadar'
