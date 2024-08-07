@@ -85,3 +85,4 @@ stages:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
+              startupCommand: 'uvicorn main:app --host 0.0.0.0 --port 8000'
