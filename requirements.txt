@@ -1,3 +1,5 @@
+tensorflow
+python-multipart
 fastapi
 uvicorn
 keras

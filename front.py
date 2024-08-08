@@ -2,16 +2,14 @@ import streamlit as st
 import httpx
 
 def call_api(file):
-    # Use localhost for local testing
-    url = "https://rythmradar.azurewebsites.net/predict"
+    url = "http://localhost:8080/predict"
     headers = {"accept": "application/json"}
+    files = {"file": (file.name, file.read(), "audio/wav")}
 
-    files = {"file": (file.name, file.read(), "application/json")}
     try:
         response = httpx.post(url, headers=headers, files=files, timeout=None)
-        
+        st.write("API response:", response.json())  # Debugging output
         return response.json()
-    
     except httpx.RequestError as e:
         st.error(f"Error calling API: {e}")
         return None
